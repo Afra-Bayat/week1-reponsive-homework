@@ -1,66 +1,116 @@
 :root {
-  --light-blue-color: #6c63ff;
-  --dark-blue-color: #544bfc;
-  --box-shadow: 3px 3px 3px rgb(0, 0, 0, 0.3);
+    --light-blue-color: #6c63ff;
+    --dark-blue-color: #544bfc;
+    --box-shadow: 3px 3px 3px rgb(0, 0, 0, 0.3);
+    --dark-grey-color: #4c4c4c;
+    --light-grey-color: #f5f2fe;
 }
 
 body {
-  font-family: sans-serif;
-  text-align: center;
-  margin: 60px auto;
-  max-width: 800px;
+    font-family: sans-serif;
+    text-align: center;
+    margin: 60px auto;
+    max-width: 800px;
 }
 
 h1 {
-  text-align: center;
-  font-weight: 900;
-  margin: 50 px;
-  font-size: 75px;
-  line-height: 58px;
+    text-align: center;
+    font-weight: 900;
+    margin: 40px auto 20px auto;
+    font-size: 75px;
+    line-height: 58px;
 }
 
-p {
-  font-size: 18px;
-  color: rgb(81, 80, 79);
-  font-weight: 600;
-  margin-bottom: 60px;
+.general-info {
+    font-size: 22px;
+    color: rgb(81, 80, 79);
+    font-weight: 600;
+    margin-bottom: 60px;
 }
 
-a {
-  padding: 15px;
-  margin: 10px;
-  border-radius: 5px;
-  border: 1px solid var(--light-blue-color);
-  font-weight: 400;
-  font-size: 14px;
-  text-decoration: none;
+.more-info {
+    display: flex;
+    justify-content: center;
+}
+
+a.contact,
+a.about-me {
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--light-blue-color);
+    font-weight: 400;
+    font-size: 14px;
+    text-decoration: none;
 }
 
 .greeding {
-  font-size: 46px;
-  font-weight: 600;
+    font-size: 46px;
+    font-weight: 600;
 }
 
 .contact {
-  background-color: var(--light-blue-color);
-  color: white;
-  box-shadow: var(--box-shadow);
+    background-color: var(--light-blue-color);
+    color: white;
+    box-shadow: var(--box-shadow);
 }
 
 .about-me {
-  background-color: white;
-  color: var(--dark-blue-color);
-  box-shadow: var(--box-shadow);
+    background-color: white;
+    color: var(--dark-blue-color);
+    box-shadow: var(--box-shadow);
 }
 
 :hover.contact {
-  background-color: var(--dark-blue-color);
-}
-
-:hover.about-me {
-  font-size: 16px;
+    background-color: var(--dark-blue-color);
 }
 
 a:hover {
-  cursor: pointer;
+    cursor: pointer;
+}
+
+.about-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-part-1,
+.about-part-2 {
+    text-align: left;
+    font-size: 20px;
+    line-height: 26px;
+    margin: 10px;
+    padding: 10px 10px;
+    background: var(--light-grey-color);
+}
+
+#contact-info {
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+#email-adress {
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--dark-blue-color);
+    text-decoration: none;
+    margin-top: 50px;
+}
+
+p.about-title {
+    font-size: 24px;
+    margin: 0;
+    font-weight: 400;
+    color: var(--dark-grey-color);
+    margin-bottom: 30px;
+}
+
+.homepage-link {
+    color: var(--dark-blue-color);
+    text-decoration: none;
+}
+
+.homepage-link:hover {
+    text-decoration: underline;
 }
