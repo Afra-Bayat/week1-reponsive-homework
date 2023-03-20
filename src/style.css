@@ -1,0 +1,66 @@
+:root {
+  --light-blue-color: #6c63ff;
+  --dark-blue-color: #544bfc;
+  --box-shadow: 3px 3px 3px rgb(0, 0, 0, 0.3);
+}
+
+body {
+  font-family: sans-serif;
+  text-align: center;
+  margin: 60px auto;
+  max-width: 800px;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 900;
+  margin: 50 px;
+  font-size: 75px;
+  line-height: 58px;
+}
+
+p {
+  font-size: 18px;
+  color: rgb(81, 80, 79);
+  font-weight: 600;
+  margin-bottom: 60px;
+}
+
+a {
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+  border: 1px solid var(--light-blue-color);
+  font-weight: 400;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.greeding {
+  font-size: 46px;
+  font-weight: 600;
+}
+
+.contact {
+  background-color: var(--light-blue-color);
+  color: white;
+  box-shadow: var(--box-shadow);
+}
+
+.about-me {
+  background-color: white;
+  color: var(--dark-blue-color);
+  box-shadow: var(--box-shadow);
+}
+
+:hover.contact {
+  background-color: var(--dark-blue-color);
+}
+
+:hover.about-me {
+  font-size: 16px;
+}
+
+a:hover {
+  cursor: pointer;
+}
